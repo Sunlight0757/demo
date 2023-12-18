@@ -3,42 +3,63 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-between h-[100vh] mx-6 md:mx-20 xl:mx-28 2xl:mx-32 py-10">
-      <Image src="/logo.png" alt="logo" width={50} height={50} priority />
-      <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-y-24 lg:gap-x-10 xl:gap-x-12 2xl:gap-x-16">
-        <div className="flex flex-col gap-y-8">
-          <span className="uppercase font-bold text-sm xl:text-base 2xl:text-lg">
-            Caribbean weather
-          </span>
-          <span className="capitalize font-bold text-3xl max-w-md md:max-w-full md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-6xl leading-normal">
-            A Refreshingly Simple Weather App For The Caribbean
-          </span>
-          <span className="max-w-sm md:max-w-md lg:max-w-full text-xl md:text-2xl lg:text-xl xl:text-2xl 2xl:text-3xl leading-normal">
-            A minimalist weather app tailored to Caribbean Islanders and the
-            diaspora
-          </span>
-          <div className="flex gap-x-4">
-            <Image
-              src="/apple.png"
-              alt="apple"
-              width={150}
-              height={50}
-              priority
-            />
-            <Image
-              src="/google.png"
-              alt="google"
-              width={150}
-              height={50}
-              priority
-            />
+    <div className="flex justify-center">
+      <div className="flex flex-col justify-between h-[100vh] max-w-[345px] tablet:max-w-[594px] desktop:max-w-[1200px]">
+        <div className="flex flex-col tablet:gap-y-14">
+          <Image
+            src="/images/logo.png"
+            alt="logo"
+            width={48}
+            height={48}
+            priority
+            className="py-10"
+          />
+          <div className="grid grid-cols-1 desktop:grid-cols-2 gap-y-24 desktop:gap-x-[108px] items-center">
+            <div className="flex flex-col">
+              <span className="font-lexend font-semibold text-sm leading-5 uppercase mb-6">
+                Caribbean weather
+              </span>
+              <span className="relative font-bold text-[32px] tablet:text-5xl leading-[48px] tablet:leading-[72px] capitalize mb-4">
+                A Refreshingly Simple Weather App For The Caribbean
+                <Image
+                  src="/images/line.png"
+                  alt="line"
+                  width={223}
+                  height={12}
+                  priority
+                  className="hidden tablet:block absolute left-2 bottom-1 -z-10"
+                />
+              </span>
+              <span className="font-normal text-lg tablet:text-2xl leading-[27px] tablet:leading-9 mb-12">
+                A minimalist weather app tailored to Caribbean Islanders and the
+                diaspora
+              </span>
+              <div className="flex gap-x-4 items-center">
+                <Image
+                  src="/images/apple.png"
+                  alt="apple"
+                  width={120}
+                  height={40}
+                  priority
+                />
+                <Image
+                  src="/images/google.png"
+                  alt="google"
+                  width={135}
+                  height={40}
+                  priority
+                />
+              </div>
+            </div>
+            <VideoPlayer />
           </div>
         </div>
-        <VideoPlayer />
-      </div>
-      <div className="flex justify-between">
-        <span>&copy; Appbanton Studios</span>
-        <span className="hidden md:block">made with 💗 in POS</span>
+        <div className="flex justify-between py-7">
+          <span>© Appbanton Studios</span>
+          <span className="hidden tablet:block">
+            made with <span className="font-arial">❤️️</span> in POS
+          </span>
+        </div>
       </div>
     </div>
   );

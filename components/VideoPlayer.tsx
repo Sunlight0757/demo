@@ -3,11 +3,11 @@ import ReactPlayer from "react-player";
 
 const VideoPlayer = () => {
   return (
-    <div>
+    <div className="w-[345px] tablet:w-[594px] desktop:w-[558px]">
       <ReactPlayer
         width="100%"
         height="auto"
-        url="/sample.mp4"
+        url="/videos/sample.mp4"
         controls={true}
         light={false}
         pip={true}

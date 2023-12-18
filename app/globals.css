@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Lexend;
+  src: url("../public/fonts/Lexend/Lexend-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../public/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -14,6 +24,18 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+* {
+  font-family: Inter;
+}
+
+.font-lexend {
+  font-family: Lexend;
+}
+
+.font-arial {
+  font-family: Arial;
 }
 
 video {
