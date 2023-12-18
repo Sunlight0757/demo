@@ -5,12 +5,12 @@ export default function Home() {
   return (
     <div className="flex flex-col justify-between h-[100vh] mx-6 md:mx-20 xl:mx-28 2xl:mx-32 py-10">
       <Image src="/logo.png" alt="logo" width={50} height={50} priority />
-      <div className="flex flex-col lg:flex-row justify-between lg:items-center gap-y-24  lg:gap-x-24">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-y-24  lg:gap-x-24">
         <div className="flex flex-col gap-y-8">
           <span className="uppercase font-bold text-sm xl:text-base 2xl:text-lg">
             Caribbean weather
           </span>
-          <span className="capitalize font-bold text-2xl md:text-5xl lg:text-3xl xl:text-4xl 2xl:text-5xl leading-normal">
+          <span className="capitalize font-bold text-2xl md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-6xl leading-normal">
             A Refreshingly Simple Weather App For The Caribbean
           </span>
           <span className="md:w-2/3 lg:w-full md:text-xl lg:text-base xl:text-xl 2xl:text-2xl leading-normal">

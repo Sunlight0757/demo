@@ -3,7 +3,7 @@ import ReactPlayer from "react-player";
 
 const VideoPlayer = () => {
   return (
-    <div className="md:w-full lg:w-[40vw]">
+    <div>
       <ReactPlayer
         width="100%"
         height="auto"
